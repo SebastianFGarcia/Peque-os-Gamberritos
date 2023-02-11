@@ -30,6 +30,12 @@ myModalCreate.addEventListener('shown.bs.modal', () => {
   nombre.focus();
   resetForm();
 })
+if (localStorage.getItem('estudiantes') === null) {
+    localStorage.setItem('estudiantes', JSON.stringify(estudiantes));
+} else {
+    estudiantes = JSON.parse(localStorage.getItem('estudiantes'));
+    Mostrar();
+}
 const myInput = document.getElementById('myInput')
 btnAgregar.addEventListener('click', () => {
     let validacion = Validaciones();
@@ -50,7 +56,6 @@ btnAgregar.addEventListener('click', () => {
     myModal.hide();
     
 });
-Mostrar();
 
 function Mostrar() {
     estudiantes = JSON.parse(localStorage.getItem('estudiantes'));
