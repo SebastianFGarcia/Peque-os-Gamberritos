@@ -1,0 +1,9 @@
+body {
+  background-image: url("../img/bg.svg");
+  background-size: cover;
+}
+
+#tbody {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}/*# sourceMappingURL=style.css.map */
