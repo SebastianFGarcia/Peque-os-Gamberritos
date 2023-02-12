@@ -43,7 +43,7 @@ btnAgregar.addEventListener('click', () => {
         return;
     } 
     let aprobo;
-    let promedio = (parseInt(materia1.value) + parseInt(materia2.value) + parseInt(materia3.value)) / 3;
+    let promedio = (parseFloat(materia1.value) + parseFloat(materia2.value) + parseFloat(materia3.value)) / 3;
     if (promedio >= 3.5) {
         aprobo = 'Si';
     } else {
